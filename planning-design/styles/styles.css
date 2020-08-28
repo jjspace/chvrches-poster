@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(215, 104, 201, 1);
+  background: rgba(207, 10, 130, 1);
+  background: linear-gradient(to top, rgba(215, 104, 201, 1) 0%, rgba(207, 10, 130, 1) 100%),
+    rgba(215, 104, 201, 1);
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'inconsolata', sans-serif;
+}
+
+a {
+  color: #04cced;
+  text-decoration: none;
+  font-size: 1.3em;
+  line-height: 1em;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.br-on-mobile {
+  display: inherit;
+}
+.hide-on-mobile {
+  display: none;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 0 2em;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.gallery {
+  display: grid;
+  grid: auto / auto;
+  grid-gap: 1em;
+  margin-bottom: 2em;
+}
+
+.gallery img,
+.gallery object {
+  width: 100%;
+}
+
+@media all and (min-width: 320px) {
+}
+
+/* This is in place of the 768 size because it's a better break point for this design */
+@media all and (min-width: 580px) {
+  .br-on-mobile {
+    display: none;
+  }
+  span.hide-on-mobile {
+    display: inline;
+  }
+  .gallery {
+    grid: auto-flow / repeat(2, 1fr);
+    grid-auto-flow: column;
+    grid: repeat(3, auto) / auto-flow;
+  }
+}

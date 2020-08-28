@@ -1,0 +1,29 @@
+{
+  "name": "poster",
+  "version": "1.0.0",
+  "description": "Interactive Poster for CHVRCHES",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "build:watch": "gulp build:watch"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}

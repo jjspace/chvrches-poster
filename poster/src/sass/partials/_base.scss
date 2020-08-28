@@ -1,0 +1,56 @@
+
+/* inconsolata-regular - latin */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inconsolata-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Inconsolata Regular'), local('Inconsolata-Regular'),
+       url('../fonts/inconsolata-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/inconsolata-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/inconsolata-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/inconsolata-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/inconsolata-v17-latin-regular.svg#Inconsolata') format('svg'); /* Legacy iOS */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --cv-red: #C61714;
+  --cv-text: #F3CA9E;
+  --cv-circles: #040114;
+}
+
+body {
+  background: var(--cv-red);
+  color: var(--cv-text);
+  font-family: "inconsolata", monospace;
+}
+
+a {
+  color: var(--cv-text);
+  text-decoration: underline;
+  line-height: 1em;
+
+  &.big {
+    font-size: 1.3em;
+  }
+
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+p {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}

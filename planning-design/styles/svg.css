@@ -1,0 +1,130 @@
+
+#cross-heart:hover {
+  cursor: pointer;
+}
+#cross-heart:hover #cross {
+  filter: url('#blur');
+}
+#cross-heart #heart {
+  transform-origin: 50px 50px;
+  transform: scale(1);
+}
+#cross-heart:hover #heart {
+  animation: heart-beat 1s linear infinite
+}
+
+@keyframes heart-beat {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
+  }
+}
+
+#tickets {
+  stroke: black;
+  fill: black;
+}
+#tickets:hover {
+  stroke: goldenrod;
+  fill: goldenrod;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+#tickets #ticket-outline {
+  stroke-dasharray: 180% 13%;
+  stroke-dashoffset: 40%;
+  /* transition: stroke-dashoffset 0.4s; */
+}
+
+#tickets:hover #ticket-outline {
+  animation: glint 1s ease-out;
+}
+
+@keyframes glint {
+  from {
+    stroke-dashoffset: 40%;
+  }
+  to {
+    stroke-dashoffset: -153%;
+  }
+}
+
+#circle-triangle:hover {
+  cursor: pointer;
+}
+#circle-triangle:hover #circle1,
+#circle-triangle:hover #circle2,
+#circle-triangle:hover #circle3 {
+  animation: pulse 0.2s;
+  transform-origin: center center;
+}
+#circle-triangle:hover #circle1 {
+  animation-delay: 0s;
+}
+#circle-triangle:hover #circle2 {
+  animation-delay: 0.1s;
+}
+#circle-triangle:hover #circle3 {
+  animation-delay: 0.3s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#pixels:hover {
+  cursor: pointer;
+}
+#pixels path {
+  transition: transform 0.3s;
+}
+#pixels:hover path:nth-child(1) {
+  transform: translate(24px);
+}
+#pixels:hover path:nth-child(7) {
+  transform: translateY(48px);
+}
+#pixels:hover path:nth-child(10) {
+  transform: translateY(-48px);
+}
+#pixels:hover path:nth-child(11) {
+  transform: translate(-48px);
+}
+#pixels:hover path:nth-child(15) {
+  transform: translate(48px);
+}
+#pixels:hover path:nth-child(16) {
+  transform: translate(24px);
+}
+#pixels:hover path:nth-child(17) {
+  transform: translate(48px);
+}
+#pixels:hover path:nth-child(18) {
+  transform: translate(48px);
+}
+#pixels:hover path:nth-child(19) {
+  transform: translate(-48px);
+}
+#pixels:hover path:nth-child(20) {
+  transform: translate(-48px);
+}

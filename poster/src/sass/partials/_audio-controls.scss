@@ -1,0 +1,69 @@
+
+.audio-controls {
+  --audio-icon-size: 40px;
+  --audio-gutter: 15px;
+  position: fixed;
+  right: var(--audio-gutter);
+  bottom: 0;
+
+  .hidden {
+    display: none;
+  }
+
+  svg {
+    display: block;
+    width: var(--audio-icon-size);
+    height: var(--audio-icon-size);
+    fill: var(--cv-text);
+    cursor: pointer;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #vol-slider {
+    --vol-level: 0.3;
+    position: absolute;
+    bottom: 5px;
+    right: calc(var(--audio-gutter) * -2);
+    width: 5px;
+    height: 95%;
+    border-radius: 2.5px;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: 0.5s all;
+  }
+  #vol-level {
+    position: absolute;
+    bottom: 0;
+    background: var(--cv-text);
+    width: 100%;
+    height: calc(var(--vol-level) * 100%);
+    border-radius: 2.5px;
+  }
+
+  #vol-up,
+  #vol-down {
+    opacity: 0;
+    transition: 0.5s all;
+  }
+  #vol-up {
+    transform: translate(calc(var(--audio-gutter) + var(--audio-icon-size) + 5px));
+  }
+  #vol-down {
+    transform: translate(calc(var(--audio-gutter) + var(--audio-icon-size) + 5px));
+  }
+
+  &.playing {
+    #vol-slider {
+      right: calc(var(--audio-gutter) * -0.6667);
+      opacity: 1;
+    }
+    #vol-up,
+    #vol-down {
+      transform: none;
+      opacity: 1;
+    }
+  }
+}

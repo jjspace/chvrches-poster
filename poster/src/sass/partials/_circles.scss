@@ -1,0 +1,29 @@
+
+#circles {
+  width: 100%;
+  cursor: pointer;
+
+  #cutout-left,
+  #cutout-center,
+  #cutout-right {
+    transform-origin: center calc(100% - 73px);
+    transition: transform 0.3s ease-out;
+  }
+  #cutout-left {
+    transition-delay: 0.1s;
+  }
+  #cutout-right {
+    transition-delay: 0.2s;
+  }
+
+  #cutout-center,
+  #cutout-left,
+  #cutout-right {
+    transform: rotateX(-90deg) translateY(40px) skewX(3deg);
+  }
+  &.active #cutout-center,
+  &.active #cutout-left,
+  &.active #cutout-right {
+    transform: rotateX(0deg) translateY(0) skew(0);
+  }
+}
