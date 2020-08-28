@@ -1,5 +1,7 @@
 # CHVRCHES SVG Poster
 
+![Final Poster](images/chvrches-poster-opti.gif)
+
 This project is an SVG poster I created for a school assignment. The goal was to create an animated, interactive poster utilizing SVG to advertise for a band of our choice. I chose the band CHVRCHES and picked a random event they had planned on their current tour when I created this project. For more info on the development process read the page about it on my website [here](https://joshrouzer.com/chvrches-poster/).
 
 ## Project requirements
@@ -22,23 +24,26 @@ This was a school project as part of my minor in Interactive Digital Media so it
 
 ## Project Samples
 
-Final Poster:
-![Final Poster](images/chvrches-poster-opti.gif)
-
 Reference Album Art:
+
 ![Album Art](images/chvrches-albums-opti.png)
 
 Sample Animations:
+
 ![Animations](images/chvrches-anim-opti.gif)
 
 Logo Animation:
+
 ![Logo Animation](images/chvrches-logo-anim-opti.gif)
 
-Popup Animation
+Popup Animation:
+
 ![Popup Animation](images/chvrches-popup-anim-opti.gif)
 
 ## Credits
 
 Audio and branding: © CHVRCHES
+
 Illustrations: © Jamie McKelvie
+
 Audio Control Icons by Adrien Coquet from the Noun Project
